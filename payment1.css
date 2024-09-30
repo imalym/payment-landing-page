@@ -1,0 +1,278 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    font-family: Poppins;
+    background-color: #1E1E1E;
+    margin: 20px;
+    width: 90%;
+    overflow-x: hidden;
+    position: fixed;/*THIS WILL FIX THE PROBLEME THAT THE BODY DOESN'T TAKE 100% OF THE WIDTH*/
+}
+
+nav{
+    /* margin:10% 10% 0 10%;
+     flex howa li raho ykhlt l7ala chwiya so fix IT*/
+     /*
+     justify-content: center;
+     align-items: center;
+      
+     justify-content: space-between;
+     display: flex;
+ */
+    width: 100%;
+    display: flex;  
+       flex-wrap: wrap;
+       flex-direction: row;
+ }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+/*nav img{
+    width: 20%;
+
+}*/
+
+nav label {
+    
+    font-size: 4.5rem; 
+    color:#FFFFFF;
+    z-index: 200;
+    /*padding: 0.5em;
+    line-height: 3rem;
+    font-weight: 100;
+    
+
+align-self: center;
+margin-right:-50% ;
+     display: block;/*DO NOT USE BLOCK*/
+    text-align: right;
+     
+}
+input[type='checkbox'] {
+   display: none;
+}
+
+.list{
+    width:30%;
+    height: 921px;
+    line-height: 7rem;
+    margin-top: 15%;
+    z-index: 50;
+    /*justify-content: space-around;
+    display: flex;
+    
+    align-items:center;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;   */
+     
+}
+nav ul{
+    display: flex;
+    /*justify-content: space-around;
+    
+    */
+    align-items:center;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul li{
+    color:#FFFFFF;
+    font-size: 2.4rem;
+    padding: 2%;
+    cursor: pointer;
+    
+}
+
+
+.list button{
+    color: #FFFFFF;
+    border-style: none;
+    background-color: inherit;
+    font-size: 2.4rem;
+
+}
+input[type='checkbox']:not(:checked)+.list{
+    display: none;
+} 
+
+
+/*input[type='checkbox']:not(:checked)+ul{
+    display: none;
+}*/
+
+/*.container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 30px;
+}*/
+
+.text {
+    color: #FFFFFF;
+    width: 100%;
+    
+}
+.text h2{
+    font-size: 2.3rem;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    opacity: 0.5;
+}
+
+.text h1{
+    font-size: 4.7rem;
+    font-weight: 800;
+    line-height: 6rem;
+}
+
+.text button{
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: none;
+    background-color: #E9DCFF;
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin-top: 25px;
+
+}
+
+.phone img{
+    width:522px;
+    margin-left: -6%;
+}
+
+@media only screen and (min-width:1050px){
+
+    header label{
+        display: none;
+    }
+    input[type='checkbox']:not(:checked)+.list{
+        display: flex;
+    } 
+    .list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width:100%;
+        height: 30%;
+        line-height: 5rem;
+        margin-left: 30%;
+        margin-top:-5%;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    /*margin-left: -12%;
+    margin-right: -12%;*/
+    margin-top: 3%;
+    width: 100%;
+    
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: nowrap;
+    width:100%
+}
+ul li{
+    color:#FFFFFF;
+    font-size: 1.8rem;
+    margin-left: -15%;
+    padding-right:20% ;
+}
+
+.log button{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: none;
+    background-color: #E9DCFF;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-right: 5px;
+   flex-wrap: nowrap;
+   color: #1E1E1E;
+}
+.log{
+    margin-left: 5%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 30px;
+}
+
+.text {
+    color: #FFFFFF;
+    width: 40%;
+    
+}
+.text h2{
+    font-size: 4rem;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    opacity: 0.5;
+}
+
+.text h1{
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 9rem;
+}
+
+.text button{
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: none;
+    background-color: #E9DCFF;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 25px;
+
+}
+
+.phone img{
+    width:90%;
+    margin-left: 18%;
+}
+
+
+}
