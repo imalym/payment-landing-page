@@ -16,8 +16,8 @@ body{
     background-color: #1E1E1E;
     margin: 20px;
     width: 90%;
-    overflow-x: hidden;
-    position: fixed;/*THIS WILL FIX THE PROBLEME THAT THE BODY DOESN'T TAKE 100% OF THE WIDTH*/
+    /*overflow-x: hidden;
+    position: fixed;THIS WILL FIX THE PROBLEME THAT THE BODY DOESN'T TAKE 100% OF THE WIDTH*/
 }
 
 nav{
